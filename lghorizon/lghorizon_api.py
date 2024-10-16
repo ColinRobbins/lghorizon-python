@@ -149,7 +149,7 @@ class LGHorizonApi:
         self._session.cookies["ACCESSTOKEN"] = self._auth.accessToken
 
         if self._refresh_callback:
-            self._refresh_callback (self.refresh_token)
+            self._refresh_callback ()
 
         _logger.debug("Authorization succeeded")
 
